@@ -1,0 +1,38 @@
+Harmanjot Singh
+Professor Andrew Harris
+Computing II
+21 September 2018
+						OOP Horse Race Algorithm
+
+•Goals - The main goal of this program is to stimulate a horse race among five horses where only one horse will be the winner in the end.  
+
+•Input - There is specially no input from the user for this program. The program will automatically generate tracks and horses to the console. However, user have to interact with the program by pressing ENTER in order for the race to continue. 
+
+•Output - The end output of this program is to display a winner horse to the screen. The progression of the race will also be displayed as it continues.
+
+•Steps - Horse.h:
+	1.Make a class named Horse with public and private values for Horse.cpp.
+	2.In the public field, declare all the public variables or attributes for the Horse class. For example, position, random number and result.
+	3.In the private field, declare attributes to get position, results and movement of each horse.
+
+Horse.cpp:
+	1.Generate a random number for horse advancement and assign it to a variable. 
+	2.Decide if the horse can advance to the next position based on step 1.
+	3.Return the horse’s current position on the track.
+	4.Return the horse’s chance of advancement.
+
+Race.h:
+	1.Make a class named Race with public and private values for Race.cpp.
+	2.In the public field, declare all the public variables or attributes for the Race class. For example, length, start function, get length and get horses. 
+	3.In the private field, declare everything that would only be accessible inside the Race class. Like, number of horses.
+ 
+Race.cpp:
+	1.Declare an empty constructor and get the length of the race and number of total horses in the race, also assign horses to array named h.
+	2.Print initial tracks for all for all horses.
+	3.Give each horse a chance to advance. 
+	4.Run a while loop until it finds a final winner horse.
+	5.Decide and print the winner to the screen. 
+
+Main.cpp:
+	1.Print a welcome message to the screen.
+	2.Start the race. 
